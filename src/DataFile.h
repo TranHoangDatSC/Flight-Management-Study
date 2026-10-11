@@ -11,15 +11,20 @@
 // PL_FL.txt     : MaMB|MaCB|SoChoNgoi
 // BookedSeat.txt: MaCB|1;2;4;
 // XuLyDatVe.txt : MaVe|STT|CMND|HoTen|MaGhe   (cac yeu cau dat ve dang cho xu ly)
-// TKxxxxxx.txt  : MaVe|STT|CMND|HoTen|MaGhe   (moi ve da duyet la mot file)
-const std::string FILE_ADMIN = "Admin.txt";
-const std::string FILE_CHUYEN_BAY = "ChuyenBay.txt";
-const std::string FILE_KHACH_HANG = "KhachHang.txt";
-const std::string FILE_MAY_BAY = "MayBay.txt";
-const std::string FILE_PL_FL = "PL_FL.txt";
-const std::string FILE_GHE_DA_DAT = "BookedSeat.txt";
-const std::string FILE_XU_LY_DAT_VE = "XuLyDatVe.txt";
+// ve/TKxxxxxx.txt: MaVe|STT|CMND|HoTen|MaGhe  (moi ve da duyet la mot file)
+const std::string DATA_DIR = "data/";
+const std::string TICKET_DIR = DATA_DIR + "ve/";
 
+const std::string FILE_ADMIN = DATA_DIR + "Admin.txt";
+const std::string FILE_CHUYEN_BAY = DATA_DIR + "ChuyenBay.txt";
+const std::string FILE_KHACH_HANG = DATA_DIR + "KhachHang.txt";
+const std::string FILE_MAY_BAY = DATA_DIR + "MayBay.txt";
+const std::string FILE_PL_FL = DATA_DIR + "PL_FL.txt";
+const std::string FILE_GHE_DA_DAT = DATA_DIR + "BookedSeat.txt";
+const std::string FILE_XU_LY_DAT_VE = DATA_DIR + "XuLyDatVe.txt";
+
+// Tao thu muc data/ va data/ve/ neu chua co (goi mot lan khi khoi dong)
+void EnsureDataFolders();
 std::string TicketFileName(const std::string& ticketId);
 
 // ===== Doc / ghi file chung =====

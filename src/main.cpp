@@ -1,4 +1,5 @@
 #include "Console.h"
+#include "DataFile.h"
 #include "Screens.h"
 
 #include <iostream>
@@ -24,6 +25,7 @@ static void ShowMainMenu() {
 }
 
 int main() {
+    EnsureDataFolders();
     while (true) {
         ShowMainMenu();
         switch (ReadChoice(1, 4)) {

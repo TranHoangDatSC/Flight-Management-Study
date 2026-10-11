@@ -153,13 +153,13 @@
     <ClInclude Include="src\Screens.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Admin.txt" />
-    <Text Include="BookedSeat.txt" />
-    <Text Include="ChuyenBay.txt" />
-    <Text Include="KhachHang.txt" />
-    <Text Include="MayBay.txt" />
-    <Text Include="PL_FL.txt" />
-    <Text Include="XuLyDatVe.txt" />
+    <Text Include="data\Admin.txt" />
+    <Text Include="data\BookedSeat.txt" />
+    <Text Include="data\ChuyenBay.txt" />
+    <Text Include="data\KhachHang.txt" />
+    <Text Include="data\MayBay.txt" />
+    <Text Include="data\PL_FL.txt" />
+    <Text Include="data\XuLyDatVe.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

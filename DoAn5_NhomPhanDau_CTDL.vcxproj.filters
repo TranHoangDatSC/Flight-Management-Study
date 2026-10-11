@@ -13,6 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{B7E3C2A4-5D1F-4E8A-9C6B-2F4A8D1E3C57}</UniqueIdentifier>
+      <Extensions>txt</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -85,26 +89,26 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ChuyenBay.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="data\ChuyenBay.txt">
+      <Filter>Data Files</Filter>
     </Text>
-    <Text Include="KhachHang.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="data\KhachHang.txt">
+      <Filter>Data Files</Filter>
     </Text>
-    <Text Include="XuLyDatVe.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="data\XuLyDatVe.txt">
+      <Filter>Data Files</Filter>
     </Text>
-    <Text Include="MayBay.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="data\MayBay.txt">
+      <Filter>Data Files</Filter>
     </Text>
-    <Text Include="BookedSeat.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="data\BookedSeat.txt">
+      <Filter>Data Files</Filter>
     </Text>
-    <Text Include="Admin.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="data\Admin.txt">
+      <Filter>Data Files</Filter>
     </Text>
-    <Text Include="PL_FL.txt">
-      <Filter>Source Files</Filter>
+    <Text Include="data\PL_FL.txt">
+      <Filter>Data Files</Filter>
     </Text>
   </ItemGroup>
 </Project>

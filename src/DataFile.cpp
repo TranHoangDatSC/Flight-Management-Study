@@ -2,6 +2,7 @@
 #include "Console.h"
 #include "Utils.h"
 
+#include <direct.h>
 #include <algorithm>
 #include <fstream>
 #include <iostream>
@@ -17,8 +18,13 @@ static string JoinList(const vector<string>& items) {
     return result;
 }
 
+void EnsureDataFolders() {
+    _mkdir(DATA_DIR.c_str());   // thu muc da ton tai thi _mkdir bo qua
+    _mkdir(TICKET_DIR.c_str());
+}
+
 string TicketFileName(const string& ticketId) {
-    return ticketId + ".txt";
+    return TICKET_DIR + ticketId + ".txt";
 }
 
 vector<string> ReadLines(const string& fileName) {
