@@ -1,0 +1,14 @@
+# Visual Studio build output
+x64/
+Debug/
+Release/
+.vs/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.idb
+
+# IDE / editor
+.vscode/
+build/
