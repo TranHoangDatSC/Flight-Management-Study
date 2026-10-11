@@ -5,13 +5,17 @@ Do an Cau truc du lieu - Nhom Phan Dau: chuong trinh console quan ly chuyen bay,
 ## Chay chuong trinh
 
 Mo `DoAn5_NhomPhanDau_CTDL.vcxproj` bang Visual Studio 2022 roi chay (F5).
-Chuong trinh doc/ghi cac file `.txt` trong thu muc goc cua project (thu muc lam viec mac dinh cua Visual Studio).
+Chuong trinh doc/ghi du lieu trong thu muc `data/` (tinh tu thu muc goc cua project - thu muc lam viec mac dinh cua Visual Studio).
+Neu chua co `data/` va `data/ve/` thi chuong trinh tu tao khi khoi dong.
 
-Tai khoan admin nam trong `Admin.txt` (dong 1: user, dong 2: password).
+Tai khoan admin nam trong `data/Admin.txt` (dong 1: user, dong 2: password).
 
-## Cau truc ma nguon
+## Cau truc thu muc
 
 ```
+data/                   File du lieu cua chuong trinh
+data/ve/                Moi ve da duyet la mot file TKxxxxxx.txt
+docs/                   Bao cao do an
 src/
   main.cpp              Menu chinh
   Console.h/.cpp        Mau chu, khung tieu de, nhap lua chon, menu cuoi man hinh, nhap mat khau
@@ -34,7 +38,7 @@ src/
 - `std::set<int>`: danh sach ghe trong / ghe da dat cua chuyen bay (tu dong sap xep, tim kiem nhanh).
 - `std::vector`: danh sach ve cua chuyen bay, cac dong doc tu file.
 
-## File du lieu
+## File du lieu (trong `data/`)
 
 | File | Dinh dang |
 |---|---|
@@ -44,4 +48,4 @@ src/
 | `PL_FL.txt` | `MaMB\|MaCB\|SoChoNgoi` |
 | `BookedSeat.txt` | `MaCB\|1;2;4;` |
 | `XuLyDatVe.txt` | `MaVe\|STT\|CMND\|HoTen\|MaGhe` - yeu cau dat ve dang cho admin duyet |
-| `TKxxxxxx.txt` | `MaVe\|STT\|CMND\|HoTen\|MaGhe` - moi ve da duyet mot file |
+| `ve/TKxxxxxx.txt` | `MaVe\|STT\|CMND\|HoTen\|MaGhe` - moi ve da duyet mot file |
